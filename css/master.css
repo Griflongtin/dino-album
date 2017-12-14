@@ -258,4 +258,21 @@ nav {
       font-size: 1.5em;
       border-bottom: 1px solid white; }
 
+form#new-dino {
+  border: 1px solid black;
+  padding: 10px; }
+  form#new-dino label {
+    margin: 10px auto;
+    display: block; }
+  form#new-dino input {
+    display: block;
+    width: 100%;
+    padding: 5px; }
+  form#new-dino button {
+    margin: 10px auto;
+    padding: 10px;
+    background: green;
+    font-size: 1.5em;
+    display: block; }
+
 /*# sourceMappingURL=master.css.map */
