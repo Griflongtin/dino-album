@@ -1,6 +1,7 @@
-function cardTemplate(dino){
+function insertDino(dino){
   return '<div class="dino-card"><div class="card-content"><div class="card-img"><img src="' + dino.image + '" alt="a dinosaur picture"></div><div class="card-slide-box"><div class="card-slide-body"></div></div></div></div>'
 }
+
 
 function Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage) {
   this.name = dinoName;
@@ -23,5 +24,6 @@ $(document).ready(function(){
     var dino = new Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage);
     dinos.push(dino);
     console.log(dinos);
+    $('#area-dino-fights').append(insertDino(dino));
   });
 });
