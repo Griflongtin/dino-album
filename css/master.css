@@ -209,7 +209,6 @@ nav {
     padding-right: 20px; }
 
 #area-dino-fights {
-  visibility: hidden;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -233,19 +232,30 @@ nav {
     .dino-card .card-content .card-img {
       width: 100%;
       height: 250px;
-      background-color: green;
       border-radius: 4px; }
+      .dino-card .card-content .card-img img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
     .dino-card .card-content .card-slide-box {
       position: absolute;
       border-radius: 4px;
       width: 100%;
       height: 365px;
-      top: 250px;
-      background-color: #000000a8;
-      transition: all 500ms ease; }
+      top: 326px;
+      background-color: #00000088;
+      transition: all 500ms ease;
+      color: black; }
     .dino-card .card-content .card-slide-box:hover {
-      background-color: #000000a8;
+      background-color: #000000cc;
       position: absolute;
       top: 0px; }
+    .dino-card .card-content h2, .dino-card .card-content p {
+      color: white;
+      padding: 5px; }
+    .dino-card .card-content h2 {
+      text-align: center;
+      font-size: 1.5em;
+      border-bottom: 1px solid white; }
 
 /*# sourceMappingURL=master.css.map */
