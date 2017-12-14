@@ -208,10 +208,15 @@ nav {
   nav a {
     padding-right: 20px; }
 
+<<<<<<< HEAD
 .main {
   display: none; }
 
 #area-dino-fights {
+=======
+#area-dino-fights {
+  visibility: hidden;
+>>>>>>> d42921e440a21bab4004b8f266acb01946249d24
   width: 100%;
   display: flex;
   justify-content: center;
@@ -235,7 +240,10 @@ nav {
     .dino-card .card-content .card-img {
       width: 100%;
       height: 250px;
+<<<<<<< HEAD
       overflow: hidden;
+=======
+>>>>>>> d42921e440a21bab4004b8f266acb01946249d24
       background-color: green;
       border-radius: 4px; }
     .dino-card .card-content .card-slide-box {
@@ -245,6 +253,7 @@ nav {
       height: 365px;
       top: 250px;
       background-color: #000000a8;
+<<<<<<< HEAD
       transition: all 500ms ease;
       color: black; }
     .dino-card .card-content .card-slide-box:hover {
@@ -255,5 +264,12 @@ nav {
     .dino-card .card-content h2 {
       text-align: center;
       font-size: 1.5em; }
+=======
+      transition: all 500ms ease; }
+    .dino-card .card-content .card-slide-box:hover {
+      background-color: #000000a8;
+      position: absolute;
+      top: 0px; }
+>>>>>>> d42921e440a21bab4004b8f266acb01946249d24
 
 /*# sourceMappingURL=master.css.map */
