@@ -1,7 +1,6 @@
 function insertDino(dino){
-  return '<div class="dino-card"><div class="card-content"><div class="card-img"><img src="' + dino.image + '" alt="a dinosaur picture"></div><div class="card-slide-box"><div class="card-slide-body"></div></div></div></div>'
+  return '<div class="dino-card"><div class="card-content"><div class="card-img"><img src="' + dino.image + '" alt="a dinosaur picture"></div><div class="card-slide-box"><div class="card-slide-body"><h2>' + dino.name + '</h2><p>Attack: ' + dino.attack + '</p><p>Armor: ' + dino.armor + '</p><p>Favorite: ' + dino.favorite + '</p></div></div></div></div>'
 }
-
 
 function Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage) {
   this.name = dinoName;

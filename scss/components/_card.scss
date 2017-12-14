@@ -1,5 +1,4 @@
 #area-dino-fights {
-  visibility: hidden;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,28 +23,36 @@
     .card-img {
       width: 100%;
       height: 250px;
-      background-color: green;
       border-radius: 4px;
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
     .card-slide-box {
       position: absolute;
       border-radius: 4px;
       width: 100%;
       height: 365px;
-      top: 250px;
-      background-color: #000000a8;
+      top: 326px;
+      background-color: #00000088;
       transition: all 500ms ease;
       color: black;
     }
     .card-slide-box:hover {
-      background-color: #000000a8;
+      background-color: #000000cc;
       position: absolute;
       top: 0px;
+    }
+    h2, p {
       color: white;
+      padding: 5px;
     }
     h2 {
       text-align: center;
       font-size: 1.5em;
+      border-bottom: 1px solid white;
     }
   }
 }
