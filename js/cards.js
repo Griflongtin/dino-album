@@ -11,7 +11,12 @@ function Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage) {
 }
 
 $(document).ready(function(){
-  var dinos = [];
+  var dinos = JSON.parse(localStorage.dinoStorage) || [];
+  $('button#load-dinos').click(function(){
+    dinos.forEach(function(eachDino){
+      $('#area-dino-fights').append(insertDino(eachDino));
+    });
+  });
   $('#new-dino').submit(function(event){
     console.log('submit');
     event.preventDefault();
@@ -23,6 +28,7 @@ $(document).ready(function(){
     var dino = new Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage);
     dinos.push(dino);
     console.log(dinos);
+    localStorage.setItem("dinoStorage", JSON.stringify(dinos));
     $('.new-dino').append(insertDino(dino));
   });
 });
