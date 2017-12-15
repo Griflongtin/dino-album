@@ -14,7 +14,7 @@ $(document).ready(function(){
   var dinos = JSON.parse(localStorage.dinoStorage) || [];
   $('button#load-dinos').click(function(){
     dinos.forEach(function(eachDino){
-      $('#area-dino-fights').append(insertDino(eachDino));
+      $('.new-dino').append(insertDino(eachDino));
     });
   });
   $('#new-dino').submit(function(event){
