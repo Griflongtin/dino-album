@@ -11,7 +11,11 @@ function Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage) {
 }
 
 $(document).ready(function(){
-  var dinos = JSON.parse(localStorage.dinoStorage) || [];
+  if (localStorage.dinoStorage) {
+    var dinos = JSON.parse(localStorage.dinoStorage);
+  } else {
+    var dinos = [];
+  }
   $('button#load-dinos').click(function(){
     dinos.forEach(function(eachDino){
       $('.new-dino').append(insertDino(eachDino));
