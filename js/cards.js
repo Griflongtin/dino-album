@@ -23,6 +23,6 @@ $(document).ready(function(){
     var dino = new Dino(dinoName, dinoAttack, dinoArmor, dinoFavorite, dinoImage);
     dinos.push(dino);
     console.log(dinos);
-    $('#area-dino-fights').append(insertDino(dino));
+    $('.new-dino').append(insertDino(dino));
   });
 });
