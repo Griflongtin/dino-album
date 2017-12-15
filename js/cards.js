@@ -29,6 +29,6 @@ $(document).ready(function(){
     dinos.push(dino);
     console.log(dinos);
     localStorage.setItem("dinoStorage", JSON.stringify(dinos));
-    $('#area-dino-fights').append(insertDino(dino));
+    $('.new-dino').append(insertDino(dino));
   });
 });

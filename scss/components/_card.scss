@@ -5,6 +5,67 @@
   flex-wrap: wrap;
 }
 
+.new-dino {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .dino-card {
+    display: flex;
+    animation-name: cardin;
+    animation-duration: 3s;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 275px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 4px;
+    .card-content {
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+      width: 100%;
+      height: 365px;
+      border-radius: 4px;
+      .card-img {
+        width: 100%;
+        height: 250px;
+        border-radius: 4px;
+        img {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .card-slide-box {
+        position: absolute;
+        border-radius: 4px;
+        width: 100%;
+        height: 365px;
+        top: 326px;
+        background-color: #00000088;
+        transition: all 500ms ease;
+        color: black;
+      }
+      .card-slide-box:hover {
+        background-color: #000000cc;
+        position: absolute;
+        top: 0px;
+      }
+      h2, p {
+        color: white;
+        padding: 5px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.5em;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
 .dino-card {
   display: flex;
   align-items: center;
@@ -54,5 +115,31 @@
       font-size: 1.5em;
       border-bottom: 1px solid white;
     }
+  }
+}
+@keyframes cardin {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    opacity: 0.2;
+    transform: rotate(72deg);
+  }
+  40% {
+    opacity: 0.4;
+    transform: rotate(144deg);
+  }
+  60% {
+    opacity: 0.6;
+    transform: rotate(216deg);
+  }
+  80% {
+    opacity: 0.8;
+    transform: rotate(288deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
   }
 }
